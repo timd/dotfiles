@@ -1,0 +1,13 @@
+[alias]
+	st = status
+	co = commit
+[user]
+	name = Tim Duckett
+	email = tim@familynet.co
+[core]
+	editor = nano
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
